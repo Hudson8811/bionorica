@@ -62,7 +62,7 @@
   }
 }
 
-@function vw($px, $resolutiond: 1920) {
+@function vw($px, $resolutiond: 1900) {
   @return (($px/$resolutiond) * 100) + vw;
 }
 

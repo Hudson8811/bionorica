@@ -3,6 +3,16 @@ html {
   line-height: 28px;
   letter-spacing: 0.1em;
   color: $blue-02;
+
+  @include max(xxl) {
+    font-size: vw(24);
+    line-height: vw(28);
+  }
+
+  @include max(sm) {
+    font-size: vw(24, 800);
+    line-height: vw(28, 800);
+  }
 }
 
 body {
@@ -10,6 +20,10 @@ body {
   color: $textMainColor;
 
   background-color: $bg;
+
+  @include max(sm) {
+    background-color: $white;
+  }
 }
 
 .container {
@@ -17,6 +31,16 @@ body {
   max-width: 1510px;
   padding: 0 15px;
   margin: 0 auto;
+
+  @include max(xxl) {
+    max-width: vw(1510);
+    padding: 0 vw(15);
+  }
+
+  @include max(sm) {
+    max-width: none;
+    padding: 0 vw(40, 800);
+  }
 }
 
 .main {

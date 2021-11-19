@@ -10,15 +10,27 @@
 
   border-bottom: solid 2px $blue;
 
+  @include max(xxl) {
+    padding-top: vw(71);
+    padding-bottom: vw(79);
+    border-bottom-width: vw(2);
+    background-position: left vw(-134) bottom 0, right vw(-68) bottom 0;
+    background-size: vw(750) auto, vw(571) auto;
+  }
+
   &__title {
     margin: 0 0 22px;
     font-size: 144px;
     text-align: center;
+
+    @include max(xxl) {
+      margin-bottom: vw(22);
+      font-size: vw(144);
+    }
   }
 
   &__plate {
     position: relative;
-    //z-index: 0;
     max-width: 940px;
     margin: 0 auto 59px;
     padding: 36px 55px 46px 71px;
@@ -30,6 +42,15 @@
     border: solid 1px $green-8b;
     border-radius: 15px;
     background-color: $bg;
+
+    @include max(xxl) {
+      max-width: vw(940);
+      margin-bottom: vw(59);
+      padding: vw(36) vw(55) vw(46) vw(71);
+      font-size: vw(24);
+      line-height: vw(28);
+      border-radius: vw(15);
+    }
 
     &::before {
       content: "";
@@ -43,6 +64,12 @@
       background-repeat: no-repeat;
       background-size: 100% auto;
       background-image: url("../images/home/bad-plate-bg.svg");
+
+      @include max(xxl) {
+        top: vw(-300);
+        width: vw(787);
+        height: vw(413);
+      }
     }
   }
 
@@ -52,5 +79,11 @@
     font-size: 24px;
     line-height: 28px;
     text-align: center;
+
+    @include max(xxl) {
+      max-width: vw(708);
+      font-size: vw(24);
+      line-height: vw(28);
+    }
   }
 }

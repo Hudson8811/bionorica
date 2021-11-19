@@ -11,6 +11,7 @@ window.addEventListener('load', () => {
     }
 
     menuToggle.onclick = () => {
+      menuToggle.blur();
       header.classList.toggle(ModClass.HEADER);
       menu.classList.toggle(ModClass.MENU);
     }

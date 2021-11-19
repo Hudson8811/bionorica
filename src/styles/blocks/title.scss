@@ -5,4 +5,8 @@
   font-weight: 900;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+
+  @include max(xxl) {
+    font-size: vw(72);
+  }
 }

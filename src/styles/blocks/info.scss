@@ -1,7 +1,16 @@
 .info {
   overflow: hidden;
+  padding-bottom: 60px;
+
+  @include max(xxl) {
+    padding-bottom: vw(60);
+  }
 
   .info-section + .info-section {
     margin-top: 50px;
+
+    @include max(xxl) {
+      margin-top: vw(50);
+    }
   }
 }

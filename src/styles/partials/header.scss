@@ -8,6 +8,17 @@
   padding-top: 42px;
   padding-bottom: 44px;
 
+  @include max(xxl) {
+    padding-top: vw(42);
+    padding-bottom: vw(44);
+  }
+
+  @include max(sm) {
+    position: static;
+    padding-top: vw(47, 800);
+    padding-bottom: vw(41, 800);
+  }
+
   &--bg {
     background-repeat: no-repeat;
     background-image: linear-gradient(
@@ -15,21 +26,52 @@
       #efefef 0%,
       rgba(219, 218, 218, 0) 100%
     );
+
+    @include max(sm) {
+      background-image: none;
+    }
   }
 
   &__container {
     width: 100%;
     max-width: 1853px;
     display: flex;
+
+    @include max(xxl) {
+      max-width: vw(1853);
+    }
+
+    @include max(sm) {
+      max-width: none;
+    }
   }
 
   &__logo {
     margin-right: 70px;
     align-self: center;
+
+    @include max(xxl) {
+      margin-right: vw(70);
+    }
+
+    @include max(sm) {
+      margin: 0 auto;
+    }
   }
 
   &__menu {
     align-self: center;
     flex-grow: 1;
+
+    @include max(sm) {
+      width: vw(60, 800);
+      margin-left: vw(-60, 800);
+      flex-grow: 0;
+      /*position: absolute;
+      top: 50%;
+      right: vw(40, 800);
+
+      transform: translateY(-50%);*/
+    }
   }
 }

@@ -3,6 +3,16 @@
   padding-top: 179px;
   padding-bottom: 63px;
 
+  @include max(xxl) {
+    padding-top: vw(179);
+    padding-bottom: vw(63);
+  }
+
+  @include max(sm) {
+    padding-top: 0;
+    padding-bottom: vw(114, 800);
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -12,6 +22,14 @@
     height: 173px;
     background: linear-gradient(180deg, #efefef 0%, transparent 100%);
     pointer-events: none;
+
+    @include max(xxl) {
+      height: vw(173);
+    }
+
+    @include max(sm) {
+      height: vw(173, 800);
+    }
   }
 
   &__container {
@@ -24,6 +42,16 @@
     font-size: 161px;
     text-align: center;
 
+    @include max(xxl) {
+      margin-bottom: vw(44);
+      font-size: vw(161);
+    }
+
+    @include max(sm) {
+      margin-bottom: vw(154, 800);
+      font-size: vw(72, 800);
+    }
+
     span {
       display: block;
       max-width: 800px;
@@ -33,6 +61,18 @@
       font-weight: 500;
       letter-spacing: 0.1em;
       text-transform: lowercase;
+
+      @include max(xxl) {
+        max-width: vw(800);
+        margin-top: vw(-28);
+        font-size: vw(72);
+      }
+
+      @include max(sm) {
+        max-width: vw(760, 800);
+        margin-top: vw(-8, 800);
+        font-size: vw(64, 800);
+      }
     }
   }
 
@@ -49,6 +89,22 @@
     color: $blue-02;
     letter-spacing: 0.1em;
 
+    @include max(xxl) {
+      max-width: vw(940);
+      margin-bottom: vw(22);
+      padding: vw(59) vw(50) vw(58) vw(52);
+      font-size: vw(21);
+      line-height: vw(28);
+    }
+
+    @include max(sm) {
+      max-width: vw(600, 800);
+      margin-bottom: vw(-114, 800);
+      padding: vw(43, 800) vw(20, 800) vw(94, 800) vw(30, 800);
+      font-size: vw(21, 800);
+      line-height: vw(28, 800);
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -59,15 +115,37 @@
       border-radius: 15px;
       background-color: $green-b6;
       pointer-events: none;
+
+      @include max(xxl) {
+        border-radius: vw(15);
+      }
+
+      @include max(sm) {
+        border-radius: vw(15, 800);
+      }
     }
 
     &-text {
       position: relative;
       z-index: 2;
+
+      @include max(sm) {
+        br {
+          display: none;
+        }
+      }
     }
 
     p:last-of-type {
       margin-top: 27px;
+
+      @include max(xxl) {
+        margin-top: vw(27);
+      }
+
+      @include max(sm) {
+        margin-top: vw(27, 800);
+      }
     }
 
     &-plant {
@@ -82,6 +160,13 @@
         width: 650px;
         height: 636px;
         background-image: url("../images/home/plant-1.svg");
+
+        @include max(xxl) {
+          top: vw(-132);
+          left: vw(-387);
+          width: vw(650);
+          height: vw(636);
+        }
       }
 
       &--two {
@@ -90,6 +175,13 @@
         width: 726px;
         height: 656px;
         background-image: url("../images/home/plant-2.svg");
+
+        @include max(xxl) {
+          top: vw(-427);
+          left: vw(-389);
+          width: vw(726);
+          height: vw(656);
+        }
       }
 
       &--three {
@@ -98,6 +190,13 @@
         width: 574px;
         height: 624px;
         background-image: url("../images/home/plant-3.svg");
+
+        @include max(xxl) {
+          top: vw(-470);
+          left: vw(108);
+          width: vw(574);
+          height: vw(624);
+        }
       }
 
       &--four {
@@ -107,6 +206,13 @@
         width: 518px;
         height: 637px;
         background-image: url("../images/home/plant-4.svg");
+
+        @include max(xxl) {
+          top: vw(-388);
+          left: vw(656);
+          width: vw(518);
+          height: vw(637);
+        }
       }
 
       &--five {
@@ -115,6 +221,13 @@
         width: 688px;
         height: 701px;
         background-image: url("../images/home/plant-5.svg");
+
+        @include max(xxl) {
+          top: vw(-112);
+          left: vw(517);
+          width: vw(688);
+          height: vw(701);
+        }
       }
     }
   }
@@ -127,6 +240,17 @@
     max-width: 800px;
     margin: 0 auto;
     transform: translateX(-30px);
+
+    @include max(xxl) {
+      max-width: vw(800);
+      transform: translateX(#{vw(-30)});
+    }
+
+    @include max(sm) {
+      max-width: none;
+      width: vw(760, 800);
+      transform: translateX(#{vw(-21, 800)});
+    }
 
     &-item {
       position: relative;
@@ -147,7 +271,37 @@
       background-repeat: no-repeat;
       background-size: auto 100%;
 
+      transition: color 0.3s ease;
+
       filter: drop-shadow(2px 2px 29px rgba(0, 0, 0, 0.09));
+
+      @include max(xxl) {
+        width: vw(123);
+        height: vw(379);
+        margin: 0 vw(16);
+        font-size: vw(72);
+        filter: drop-shadow(#{vw(2)} #{vw(2)} #{vw(29)} rgba(0, 0, 0, 0.09));
+      }
+
+      @include max(sm) {
+        width: vw(123, 800);
+        height: vw(379, 800);
+        margin: 0 vw(16, 800);
+        font-size: vw(72, 800);
+        filter: drop-shadow(
+          #{vw(2, 800)} #{vw(2, 800)} #{vw(29, 800)} rgba(0, 0, 0, 0.09)
+        );
+      }
+
+      @include hover {
+        color: $green-b6;
+      }
+
+      &:active {
+        span {
+          opacity: 0.7;
+        }
+      }
 
       span {
         position: absolute;
@@ -164,6 +318,14 @@
           left: 55%;
           top: 58%;
           width: 212px;
+
+          @include max(xxl) {
+            width: vw(212);
+          }
+
+          @include max(sm) {
+            width: vw(212, 800);
+          }
         }
       }
 
@@ -175,6 +337,14 @@
           left: 51%;
           top: 59%;
           width: 212px;
+
+          @include max(xxl) {
+            width: vw(212);
+          }
+
+          @include max(sm) {
+            width: vw(212, 800);
+          }
         }
       }
 
@@ -182,9 +352,26 @@
         font-size: 36px;
         background-image: url("../images/home/vial--homeopaty.png");
 
+        @include max(xxl) {
+          font-size: vw(36);
+        }
+
+        @include max(sm) {
+          font-size: vw(36, 800);
+        }
+
         span {
           top: 58.5%;
           width: 283px;
+
+          @include max(xxl) {
+            width: vw(283);
+          }
+
+          @include max(sm) {
+            left: 56%;
+            width: vw(283, 800);
+          }
         }
       }
 
@@ -194,9 +381,28 @@
         line-height: 1.2;
         background-image: url("../images/home/vial--med.png");
 
+        @include max(xxl) {
+          height: vw(444);
+          font-size: vw(24);
+        }
+
+        @include max(sm) {
+          height: vw(444, 800);
+          font-size: vw(24, 800);
+        }
+
         span {
           top: 55%;
           width: 352px;
+
+          @include max(xxl) {
+            width: vw(352);
+          }
+
+          @include max(sm) {
+            left: 60%;
+            width: vw(352, 800);
+          }
         }
       }
 
@@ -205,10 +411,27 @@
         white-space: nowrap;
         background-image: url("../images/home/vial--phytology.png");
 
+        @include max(xxl) {
+          font-size: vw(28);
+        }
+
+        @include max(sm) {
+          font-size: vw(28, 800);
+        }
+
         span {
           left: 46%;
           top: 58%;
           width: 283px;
+
+          @include max(xxl) {
+            width: vw(283);
+          }
+
+          @include max(sm) {
+            left: 55%;
+            width: vw(283, 800);
+          }
         }
       }
     }
