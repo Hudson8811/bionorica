@@ -1,0 +1,14 @@
+extends ../layouts/default
+
+block vars
+  -
+    const page = {
+      title: 'Главная',
+      isHome: true,
+      current: 1
+    };
+
+block main 
+  include ../modules/home/hero
+  include ../modules/home/bad
+  include ../modules/home/info

@@ -1,0 +1,31 @@
+/* media */
+$media-list: (
+  "xxs": 375,
+  "xs": 560,
+  "sm": 767,
+  "md": 1079,
+  "lg": 1279,
+  "xl": 1599,
+  "xxl": 1900,
+);
+
+/* шрифты */
+//$fs-main: 24px;
+$mainFont: "KievitPro", "Arial", sans-serif;
+
+/* цвета */
+$blue: #00467f;
+$blue-02: #022a4b;
+
+$green-b6: #b6cd48;
+$green-8b: #8bc53f;
+
+$bg: #f6f4f2;
+
+$textMainColor: $blue-02;
+
+// Retina
+//---------------------------------
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

@@ -1,0 +1,97 @@
+.menu {
+  $self: &;
+
+  display: flex;
+
+  &--opened {
+    #{$self}__toggle {
+      &-icon {
+        &--bar {
+          display: none;
+        }
+        &--close {
+          display: block;
+        }
+      }
+    }
+
+    #{$self}__nav {
+      display: flex;
+    }
+  }
+
+  &__toggle {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 80px;
+    height: 80px;
+    padding: 8px;
+    margin-left: auto;
+
+    border: none;
+    background-color: transparent;
+    appearance: none;
+    cursor: pointer;
+
+    &-icon {
+      display: block;
+      align-self: center;
+
+      svg {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      &--bar {
+        svg {
+          stroke: $blue;
+        }
+      }
+      &--close {
+        display: none;
+
+        svg {
+          fill: $blue;
+        }
+      }
+    }
+  }
+
+  &__nav {
+    display: none;
+    align-self: center;
+
+    &-item {
+      max-width: 462px;
+      margin-right: 40px;
+      font-size: 21px;
+      line-height: 1.2;
+      color: $blue;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      align-self: center;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @include hover {
+        color: $green-b6;
+      }
+
+      &:active {
+        opacity: 0.7;
+      }
+
+      &--current {
+        color: $green-b6;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.info {
+  overflow: hidden;
+
+  .info-section + .info-section {
+    margin-top: 50px;
+  }
+}

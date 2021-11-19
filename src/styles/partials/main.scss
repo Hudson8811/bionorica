@@ -1,0 +1,24 @@
+html {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: $blue-02;
+}
+
+body {
+  font-family: $mainFont;
+  color: $textMainColor;
+
+  background-color: $bg;
+}
+
+.container {
+  width: 100%;
+  max-width: 1510px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.main {
+  //padding-top: 167px;
+}

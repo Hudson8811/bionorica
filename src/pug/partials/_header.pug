@@ -1,0 +1,21 @@
+header.header
+  .header__container.container 
+    if page.isHome 
+      a.header__logo.logo
+        img(src="images/logo.svg", width="307", height="87", alt="bionorica logo")
+    else 
+      a.header__logo.logo(href= URLS.home)
+        img(src="images/logo.svg", width="307", height="87", alt="bionorica logo")
+
+    .header__menu.menu
+      nav.menu__nav
+        each item in MENU 
+          if page.current === item.current
+            a.menu__nav-item.menu__nav-item--current!= item.text
+          else
+            a.menu__nav-item(href= item.url)!= item.text
+      button.menu__toggle(type="button", aria-label="Меню")
+        span.menu__toggle-icon.menu__toggle-icon--bar
+          +icon('bar')(width="64", height="50")
+        span.menu__toggle-icon.menu__toggle-icon--close
+          +icon('close')(width="44", height="44")

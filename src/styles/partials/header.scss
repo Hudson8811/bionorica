@@ -1,0 +1,35 @@
+.header {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  padding-top: 42px;
+  padding-bottom: 44px;
+
+  &--bg {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+      180deg,
+      #efefef 0%,
+      rgba(219, 218, 218, 0) 100%
+    );
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 1853px;
+    display: flex;
+  }
+
+  &__logo {
+    margin-right: 70px;
+    align-self: center;
+  }
+
+  &__menu {
+    align-self: center;
+    flex-grow: 1;
+  }
+}

@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "KievitPro";
+  src: local("KievitPro-Regular"), local("KievitPro Regular"),
+    url("../fonts/KievitPro-Regular.woff2") format("woff2"),
+    url("../fonts/KievitPro-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KievitPro";
+  src: local("KievitPro-Medium"), local("KievitPro Medium"),
+    url("../fonts/KievitPro-Medium.woff2") format("woff2"),
+    url("../fonts/KievitPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KievitPro";
+  src: local("KievitPro-Bold"), local("KievitPro Bold"),
+    url("../fonts/KievitPro-Bold.woff2") format("woff2"),
+    url("../fonts/KievitPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KievitPro";
+  src: local("KievitPro-Black"), local("KievitPro Black"),
+    url("../fonts/KievitPro-Black.woff2") format("woff2"),
+    url("../fonts/KievitPro-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
