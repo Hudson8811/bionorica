@@ -1,0 +1,65 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //margin: 0 -5px;
+
+  @include max(xxl) {
+    //margin: 0 vw(-5);
+  }
+
+  @include max(sm) {
+    //margin: 0 vw(-5, 800);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 46px;
+    height: 46px;
+    border: 1px solid $blue;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: 0 5px;
+    color: $blue;
+    transition: 0.2s linear;
+
+    @include max(xxl) {
+      margin: 0 vw(5);
+      width: vw(46);
+      height: vw(46);
+    }
+
+    @include max(sm) {
+      margin: 0 vw(5, 800);
+      width: vw(46, 800);
+      height: vw(46, 800);
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+      display: block;
+      object-fit: contain;
+
+      @include max(xxl) {
+        width: vw(24);
+        height: vw(24);
+      }
+
+      @include max(sm) {
+        width: vw(24, 800);
+        height: vw(24, 800);
+      }
+    }
+
+    @include min(md) {
+      &:hover {
+        color: #ffffff;
+        background: $blue;
+      }
+    }
+  }
+}

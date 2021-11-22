@@ -1,14 +1,15 @@
 mixin info-section(item)
   - let cl = item.text2 ? ' info-section--wrap' : '';
+  - let isAosReverse = item.mod.indexOf('info-section--reverse') === -1;
 
   section.info-section(class= (item.mod || '') + cl)
     .info-section__container.container
-      .info-section__main 
+      .info-section__main(data-aos= (isAosReverse ? 'fade-right' : 'fade-left'))
         h2.info-section__title.title!= item.title
         .info-section__text!= item.text
       .info-section__image 
-        img(src="images/" + item.img.path, width= item.img.w, height= item.img.h alt="")
+        img(src="images/" + item.img.path, width= item.img.w, height= item.img.h alt="", data-aos=(isAosReverse ? 'fade-left' : 'fade-right'))
       
       if item.text2 
-        .info-section__bottom
+        .info-section__bottom(data-aos="fade-up")
           .info-section__bottom-text!= item.text2

@@ -1,19 +1,19 @@
 section.atlas 
   .atlas__container.container 
     .atlas__intro 
-      p Среди растений, которые специалисты «Бионорики» используют для производства своих лекарственных препаратов самые целебные представители европейской флоры – от известной всем ромашки лекарственной до редких растений, внесенных в нашей стране в Красную Книгу.
+      p(data-aos="fade-up") Среди растений, которые специалисты «Бионорики» используют для производства своих лекарственных препаратов самые целебные представители европейской флоры – от известной всем ромашки лекарственной до редких растений, внесенных в нашей стране в Красную Книгу.
 
-      p Предлагаем вам вместе с нами совершить путешествие по Атласу мира и узнать, где выращиваются лекарственные растения, которые «Бионорика» использует для производства.
+      p(data-aos="fade-up") Предлагаем вам вместе с нами совершить путешествие по Атласу мира и узнать, где выращиваются лекарственные растения, которые «Бионорика» использует для производства.
     
     .atlas__grid
       each item in ATLAS_ITEMS
-        .atlas__item(class="atlas__item--" + item.mod)
+        .atlas__item(class="atlas__item--" + item.mod, data-aos="fade-up")
           a.atlas__item-image(href="#")
             img(src="images/phytology/atlas/" + item.img.path, width= item.img.w, height= item.img.h, alt="")
           span.atlas__item-title= item.title
           span.atlas__item-text!= item.text
     
-  .atlas__plate 
+  .atlas__plate(data-aos="fade-up", data-aos-delay="300")
     .atlas__plate-title  Атлас растений 
     .atlas__plate-text
       a(href="https://bionorica.ru/lekarstvennye-travy", target="_blank") https://bionorica.ru/lekarstvennye-travy

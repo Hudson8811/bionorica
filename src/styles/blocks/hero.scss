@@ -270,16 +270,17 @@
 
   &__menu {
     position: relative;
+    left: -30px;
     z-index: 1;
     display: flex;
     justify-content: center;
     max-width: 800px;
     margin: 0 auto;
-    transform: translateX(-30px);
+    //transform: translateX(-30px);
 
     @include max(xxl) {
       max-width: vw(800);
-      transform: translateX(#{vw(-30)});
+      left: vw(-30);
     }
 
     @include max(sm) {

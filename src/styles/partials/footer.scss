@@ -1,0 +1,45 @@
+.footer {
+  padding: 60px 0;
+
+  @include max(xxl) {
+    padding: vw(60) 0;
+  }
+  @include max(sm) {
+    padding: vw(60, 800) 0;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1920px;
+
+    @include max(sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__copyright {
+    font-size: 24px;
+    line-height: 28px;
+    color: $blue;
+    align-self: center;
+
+    @include max(xxl) {
+      font-size: vw(24);
+      line-height: vw(28);
+    }
+
+    @include max(sm) {
+      font-size: vw(24, 800);
+      line-height: vw(28, 800);
+    }
+  }
+
+  &__social {
+    align-self: center;
+
+    @include max(sm) {
+      margin-top: vw(40, 800);
+    }
+  }
+}

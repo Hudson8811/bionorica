@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="css/main.min.css" rel="stylesheet">
     <title>Главная</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" data-aos="fade-down">
       <div class="header__container container"> <a class="header__logo logo"><img src="images/logo.svg" width="307" height="87" alt="bionorica logo"></a>
         <div class="header__menu menu">
           <nav class="menu__nav"><a class="menu__nav-item menu__nav-item--current">Главная</a><a class="menu__nav-item" href="home.html#bad">БАД</a><a class="menu__nav-item" href="ctm.html">CTM</a><a class="menu__nav-item" href="homeopaty.html">Гомеопатия</a><a class="menu__nav-item" href="medicament.html">Лекарственный препарат на&nbsp;основе растительного сырья </a><a class="menu__nav-item" href="phytology.html">Атлас растений</a>
@@ -27,60 +28,82 @@
     <main class="main">
       <section class="hero"> 
         <div class="hero__container container"> 
-          <h1 class="hero__title title">Фитология: <span>гид по растениям вашей аптечки</span></h1>
-          <div class="hero__plate">
+          <h1 class="hero__title title">
+            <div data-aos="fade-up" data-aos-delay="100">Фитология: </div><span data-aos="fade-up" data-aos-delay="200">гид по растениям вашей аптечки</span>
+          </h1>
+          <div class="hero__plate" data-aos="fade-up" data-aos-delay="300">
             <div class="hero__plate-text">
               <p>«Ты травки попей, и полегчает!», - о чем на самом деле этот популярный совет? О том, чтобы попить настой из сухих трав или <br>о&nbsp;том,&nbsp;чтобы включить в свой рацион БАД на основе растений <br>(как вчера в Инстаграме кто-то в очередной раз советовал)? <br>О лекарственном препарате растительного происхождения или, может, вообще о гомеопатии? Мы в редакции Woman.ru очень любим все натуральное, и чтобы понять, что именно мы приобретаем, <br>когда покупаем «травки», мы решили разобрать свои аптечки. <br>И на этом пути нас ожидало немало удивительных открытий.</p>
               <p>Спешим поделиться!</p>
             </div>
-            <div class="hero__plate-plant hero__plate-plant--one"></div>
-            <div class="hero__plate-plant hero__plate-plant--two"></div>
-            <div class="hero__plate-plant hero__plate-plant--three"></div>
-            <div class="hero__plate-plant hero__plate-plant--four"></div>
-            <div class="hero__plate-plant hero__plate-plant--five"></div>
+            <div class="hero__plate-plant hero__plate-plant--one" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400"></div>
+            <div class="hero__plate-plant hero__plate-plant--two" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="400"></div>
+            <div class="hero__plate-plant hero__plate-plant--three" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"></div>
+            <div class="hero__plate-plant hero__plate-plant--four" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="400"></div>
+            <div class="hero__plate-plant hero__plate-plant--five" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400"></div>
           </div>
-          <div class="hero__menu"><a class="hero__menu-item hero__menu-item--bad" href="home.html#bad"><span>БАД</span></a><a class="hero__menu-item hero__menu-item--ctm" href="ctm.html"><span>CTM</span></a><a class="hero__menu-item hero__menu-item--homeopaty" href="homeopaty.html"><span>Гомеопатия</span></a><a class="hero__menu-item hero__menu-item--med" href="medicament.html"><span>Лекарственный препарат на&nbsp;основе растительного сырья </span></a><a class="hero__menu-item hero__menu-item--phytology" href="phytology.html"><span>Атлас растений</span></a>
+          <div class="hero__menu" data-aos="fade-up"><a class="hero__menu-item hero__menu-item--bad" href="home.html#bad"><span>БАД</span></a><a class="hero__menu-item hero__menu-item--ctm" href="ctm.html"><span>CTM</span></a><a class="hero__menu-item hero__menu-item--homeopaty" href="homeopaty.html"><span>Гомеопатия</span></a><a class="hero__menu-item hero__menu-item--med" href="medicament.html"><span>Лекарственный препарат на&nbsp;основе растительного сырья </span></a><a class="hero__menu-item hero__menu-item--phytology" href="phytology.html"><span>Атлас растений</span></a>
           </div>
         </div>
       </section>
       <section class="bad" id="bad">
         <div class="bad__container container"> 
-          <h2 class="bad__title title">БАД</h2>
-          <div class="bad__plate">Не знаем, как у вас, а у нас в редакции все принимают БАДы. Вот прямо сейчас в наших аптечках есть: БАДы от стресса, от усталости, от ПМС, от сезонной хандры, от частых простуд и от цистита. Они такие разные эти БАДы, а их баночки такие красивые и привлекательные. И назначать их можно себе самим: травки же, не навредишь. Или все-таки нет?</div>
-          <div class="bad__text">Главная особенность БАДов состоит в том, что они не являются лекарственными средствами для лечения заболеваний (если на упаковке БАДа написано, что он лечит, это может преследоваться по закону).</div>
+          <h2 class="bad__title title" data-aos="fade-up">БАД</h2>
+          <div data-aos="fade-up">
+            <div class="bad__plate">Не знаем, как у вас, а у нас в редакции все принимают БАДы. Вот прямо сейчас в наших аптечках есть: БАДы от стресса, от усталости, от ПМС, от сезонной хандры, от частых простуд и от цистита. Они такие разные эти БАДы, а их баночки такие красивые и привлекательные. И назначать их можно себе самим: травки же, не навредишь. Или все-таки нет?</div>
+          </div>
+          <div class="bad__text" data-aos="fade-up">Главная особенность БАДов состоит в том, что они не являются лекарственными средствами для лечения заболеваний (если на упаковке БАДа написано, что он лечит, это может преследоваться по закону).</div>
         </div>
       </section>
       <div class="info"> 
         <section class="info-section info-section--pt info-section--custom-1">
           <div class="info-section__container container">
-            <div class="info-section__main"> 
+            <div class="info-section__main" data-aos="fade-right">
               <h2 class="info-section__title title"><span>Кто придумал?</span></h2>
               <div class="info-section__text">Первые прототипы современных БАДов были созданы в 1920-е годы американским химиком Карлом Ренборгом, который попытался получить препарат на основе люцерны, водяного перца и петрушки. Получилось, и совсем скоро Ренборг основал собственную компанию. К 1980-м годам популярность БАДов стала общемировой, а количество производителей добавок исчислялось уже сотнями. К тому времени в СМИ все чаще начали появляться материалы об обеднении почв и «пустоте» калорий, которые употребляет современный человек, и полезная природная добавка казалась хорошим способом сделать рацион более полезным.</div>
             </div>
-            <div class="info-section__image"> <img src="images/home/info-1.svg" width="567" height="638" alt=""></div>
+            <div class="info-section__image"> <img src="images/home/info-1.svg" width="567" height="638" alt="" data-aos="fade-left"></div>
           </div>
         </section>
         <section class="info-section info-section--reverse info-section--custom-2">
           <div class="info-section__container container">
-            <div class="info-section__main"> 
+            <div class="info-section__main" data-aos="fade-left">
               <h2 class="info-section__title title"><span>Что мы делаем </span><span>не так?</span></h2>
               <div class="info-section__text">Побочным эффектом популярности БАДов стала традиция использовать их не по назначению – то есть не как добавку, обогащающую рацион веществами и пищевыми соединениями, задача которой оптимизировать обмен веществ и улучшать состояние микрофлоры кишечника, а как лекарство от разных болезней. Многие, кстати, продолжают делать это и сегодня, что не лучшим образом сказывается на репутации БАДов, которые лечить вообще не должны. Например, многие знают, что от цистита можно принимать клюквенные таблетки, и многие назначают их себе сами. Однако цистит – проблема серьезная, требующая профессиональной диагностики и назначений, а не рекомендаций кассовых шелфтокеров. И если в результате приема самостоятельно назначенного БАДа заболевание перейдет в более серьезную стадию – это будет не проблема клюквенных таблеток, а проблема человека, который занимался самолечением. </div>
             </div>
-            <div class="info-section__image"> <img src="images/home/info-2.svg" width="539" height="519" alt=""></div>
+            <div class="info-section__image"> <img src="images/home/info-2.svg" width="539" height="519" alt="" data-aos="fade-right"></div>
           </div>
         </section>
         <section class="info-section info-section--bg info-section--custom-3">
           <div class="info-section__container container">
-            <div class="info-section__main"> 
+            <div class="info-section__main" data-aos="fade-right">
               <h2 class="info-section__title title"><span>А что там </span><span>с&nbsp;эффективностью?</span></h2>
               <div class="info-section__text"><p>Есть и еще один момент, который в случае с БАДами несколько настораживает. </p><p>Дело в том, что контроль производства сырья, которое используется для получения БАДов, никак не регламентируется. Где и как оно собрано? В какое время? Каким способом обработано?  На все эти вопросы в случае с биологически-активными добавками получить ответ практически невозможно. Для конечного потребителя это означает отсутствие определенности. То есть если повезет, средство может работать очень хорошо, если не повезет, стать бесполезным малоэффективным.</p></div>
             </div>
-            <div class="info-section__image"> <img src="images/home/info-3.svg" width="496" height="452" alt=""></div>
+            <div class="info-section__image"> <img src="images/home/info-3.svg" width="496" height="452" alt="" data-aos="fade-left"></div>
           </div>
         </section>
       </div>
     </main>
-    <footer class="footer"><a class="send-postcard" href="postcard.html"><span>Пожелать здоровья</span></a></footer>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__copyright">© 2021 HSM production</div>
+        <div class="footer__social social"><a class="social__item vk" href="#">
+            <svg>
+              <use xlink:href="images/sprite.svg#soc-vk"></use>
+            </svg></a><a class="social__item ok" href="#">
+            <svg>
+              <use xlink:href="images/sprite.svg#soc-ok"></use>
+            </svg></a><a class="social__item fb" href="#">
+            <svg>
+              <use xlink:href="images/sprite.svg#soc-fb"></use>
+            </svg></a><a class="social__item tw" href="#">
+            <svg>
+              <use xlink:href="images/sprite.svg#soc-tw"></use>
+            </svg></a></div><a class="send-postcard" href="postcard.html"><span>Пожелать здоровья</span></a>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
