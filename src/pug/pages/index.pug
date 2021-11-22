@@ -3,8 +3,23 @@ extends ../layouts/default
 block vars
 	-
 		const page = {
-			title: 'Главная'
+			title: 'Главная',
+			isIntro: true
+
 		};
 
 block main
 	.container
+		ul 
+			li 
+				a(href= URLS.home) Главная
+			li 
+				a(href= URLS.ctm) CTM
+			li 
+				a(href= URLS.homeopaty) Гомеопатия
+			li 
+				a(href= URLS.medicament) Лекарственный препарат на&nbsp;основе растительного сырья
+			li 
+				a(href= URLS.phytology) Атлас растений
+			li 
+				a(href= URLS.postcard) Открытка

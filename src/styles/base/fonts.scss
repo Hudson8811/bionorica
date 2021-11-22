@@ -10,6 +10,16 @@
 
 @font-face {
   font-family: "KievitPro";
+  src: local("KievitPro-Italic"), local("KievitPro Italic"),
+    url("../fonts/KievitPro-Italic.woff2") format("woff2"),
+    url("../fonts/KievitPro-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KievitPro";
   src: local("KievitPro-Medium"), local("KievitPro Medium"),
     url("../fonts/KievitPro-Medium.woff2") format("woff2"),
     url("../fonts/KievitPro-Medium.woff") format("woff");

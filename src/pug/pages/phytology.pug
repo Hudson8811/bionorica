@@ -1,0 +1,13 @@
+extends ../layouts/default
+
+block vars
+  -
+    const page = {
+      title: 'Фитология',
+      isHome: false,
+      current: 5
+    };
+
+block main 
+  include ../modules/phytology/inner-hero
+  include ../modules/phytology/atlas

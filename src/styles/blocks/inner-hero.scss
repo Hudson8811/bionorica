@@ -1,0 +1,381 @@
+.inner-hero {
+  $self: &;
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 600px;
+  height: 100vh;
+  padding-top: 150px;
+  padding-bottom: 63px;
+  border-bottom: solid 2px $blue;
+
+  & > * {
+    align-self: center;
+  }
+
+  @include max(xxl) {
+    padding-top: vw(150);
+    padding-bottom: vw(63);
+    border-bottom-width: vw(2);
+  }
+
+  @include max(sm) {
+    padding-top: 0;
+    padding-bottom: vw(114, 800);
+
+    height: auto;
+    min-height: 0;
+    border-bottom: none;
+  }
+
+  &--ctm {
+    background-repeat: no-repeat;
+    background-position: left -43px bottom 0, right -66px bottom 0;
+    background-size: 797px auto, 761px auto; //auto 106%, auto 108.8%;
+    background-image: url("../images/ctm/inner-hero-bg-1.png"),
+      url("../images/ctm/inner-hero-bg-2.png");
+
+    @include max(xxl) {
+      background-size: vw(797) auto, vw(761) auto;
+      background-position: left vw(-43) bottom 0, right vw(-66) bottom 0;
+    }
+
+    @include max(sm) {
+      padding-top: vw(100, 800);
+      background-image: none;
+    }
+
+    #{$self}__container {
+      margin-top: -110px;
+
+      @include max(xxl) {
+        margin-top: vw(-110);
+      }
+
+      @include max(sm) {
+        margin-top: 0;
+      }
+    }
+
+    #{$self}__title {
+      @include max(sm) {
+        margin-bottom: vw(50, 800);
+        font-size: vw(72, 800);
+      }
+    }
+
+    #{$self}__plate {
+      &::before {
+        content: "";
+        position: absolute;
+        top: -279px;
+        left: 52%;
+        z-index: -1;
+        transform: translateX(-50%);
+        width: 714px;
+        height: 433px;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-image: url("../images/ctm/inner-hero-plate-bg.svg");
+
+        @include max(xxl) {
+          top: vw(-279);
+          width: vw(714);
+          height: vw(433);
+        }
+
+        @include max(sm) {
+          top: vw(-288, 800);
+          width: vw(657, 800);
+          height: vw(433, 800);
+          background-image: url("../images/home/bad-plate-bg-mobile.svg");
+        }
+      }
+    }
+  }
+
+  &--homeopaty {
+    position: relative;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      top: 36px;
+      transform: translateX(-50.6%);
+      width: 100%;
+      max-width: 1816px;
+      height: 454px;
+
+      background-repeat: no-repeat;
+      background-position: 0 0, 449px 0, 899px 0, 1369px 0;
+      background-size: auto 100%;
+      background-image: url("../images/homeopaty/inner-hero-bg.svg"),
+        url("../images/homeopaty/inner-hero-bg.svg"),
+        url("../images/homeopaty/inner-hero-bg.svg"),
+        url("../images/homeopaty/inner-hero-bg.svg");
+
+      @include max(xxl) {
+        top: vw(36);
+        max-width: vw(1816);
+        height: vw(454);
+        background-position: 0 0, vw(449) 0, vw(899) 0, vw(1369) 0;
+      }
+
+      @include max(sm) {
+        display: none;
+      }
+    }
+
+    &::after {
+      top: auto;
+      bottom: -43px;
+
+      @include max(xxl) {
+        bottom: vw(-43);
+      }
+    }
+
+    #{$self}__container {
+      margin-top: -98px;
+
+      @include max(xxl) {
+        margin-top: vw(-98);
+      }
+
+      @include max(sm) {
+        margin-top: 0;
+      }
+    }
+
+    #{$self}__title {
+      margin-bottom: 77px;
+      font-size: 99px;
+
+      @include max(xxl) {
+        margin-bottom: vw(77);
+        font-size: vw(99);
+      }
+    }
+
+    #{$self}__plate {
+      padding: 89px 75px 77px 75px;
+
+      @include max(xxl) {
+        padding: vw(89) vw(75) vw(77) vw(75);
+      }
+    }
+  }
+
+  &--medicament {
+    background-repeat: no-repeat;
+    background-position: left 0 top 53%, right 0 bottom 0;
+    background-size: 384px auto, 396px auto; //auto 81.86695278969957%, auto 105.2575107296137%;
+    background-image: url("../images/medicament/inner-hero-bg-1.png"),
+      url("../images/medicament/inner-hero-bg-2.png");
+
+    @include max(xxl) {
+      background-size: vw(384) auto, vw(396) auto;
+    }
+
+    @include max(sm) {
+      padding-top: vw(80, 800);
+      background-image: none;
+    }
+
+    #{$self}__title {
+      max-width: 1200px;
+      margin: 10px auto 19px;
+      font-size: 72px;
+
+      @include max(xxl) {
+        max-width: vw(1200);
+        margin-top: vw(10);
+        margin-bottom: vw(19);
+        font-size: vw(72);
+      }
+
+      @include max(sm) {
+        max-width: none;
+        margin-top: 0;
+        margin-bottom: vw(19, 800);
+        font-size: vw(42, 800);
+      }
+    }
+
+    #{$self}__plate {
+      position: relative;
+      padding: 48px 74px 41px 74px;
+
+      @include max(xxl) {
+        padding: vw(48) vw(74) vw(41) vw(74);
+      }
+
+      @include max(sm) {
+        padding: vw(48, 800) vw(36, 800) vw(41, 800);
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: -409px;
+        left: 48%;
+        z-index: -1;
+        transform: translateX(-50%);
+        width: 826px;
+        height: 519px;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-image: url("../images/medicament/inner-hero-plate-bg.svg");
+
+        @include max(xxl) {
+          top: vw(-409);
+          width: vw(826);
+          height: vw(519);
+        }
+
+        @include max(sm) {
+          top: vw(-248, 800);
+          width: vw(500, 800);
+          height: vw(413, 800);
+        }
+      }
+    }
+  }
+
+  &--phytology {
+    height: auto;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: left 0 top 0, right 0 bottom 0;
+    background-size: 737px auto, 569px auto;
+    background-image: url("../images/phytology/inner-hero-bg-1.png"),
+      url("../images/phytology/inner-hero-bg-2.png");
+
+    @include max(xxl) {
+      background-size: vw(737) auto, vw(569) auto;
+    }
+
+    @include max(sm) {
+      padding-bottom: vw(282, 800);
+      border-bottom: solid vw(2, 800) $blue;
+      background-image: url("../images/phytology/inner-hero-bg-mobile.png");
+      background-size: 100% auto;
+      background-position: left 0 bottom 0;
+    }
+
+    #{$self}__container {
+      margin-top: -27px;
+
+      @include max(xxl) {
+        margin-top: vw(-27);
+      }
+
+      @include max(sm) {
+        margin-top: 0;
+      }
+    }
+
+    #{$self}__title {
+      margin: 0 0 33px;
+      font-size: 99px;
+
+      @include max(xxl) {
+        margin-bottom: vw(33);
+        font-size: vw(99);
+      }
+
+      @include max(sm) {
+        margin-bottom: vw(42, 800);
+        font-size: vw(72, 800);
+      }
+
+      span {
+        display: block;
+        max-width: 940px;
+        margin: -5px auto 0;
+        font-size: 64px;
+        line-height: 1;
+        letter-spacing: 0.1em;
+        font-weight: 400;
+        text-transform: lowercase;
+
+        @include max(xxl) {
+          max-width: vw(940);
+          margin-top: vw(-5);
+          font-size: vw(64);
+        }
+
+        @include max(sm) {
+          max-width: none;
+          margin-top: vw(9, 800);
+          font-size: vw(48, 800);
+        }
+      }
+    }
+
+    #{$self}__plate {
+      padding: 29px 61px 26px 21px;
+
+      @include max(xxl) {
+        padding: vw(29) vw(61) vw(26) vw(21);
+      }
+
+      @include max(sm) {
+        max-width: none;
+        padding: vw(29, 800) vw(11, 800) vw(26, 800) vw(10, 800);
+        border: none;
+        background-color: transparent;
+      }
+    }
+  }
+
+  &__container {
+  }
+
+  &__title {
+    margin: 0 0 21px;
+    font-size: 144px;
+    text-align: center;
+
+    @include max(xxl) {
+      margin-bottom: vw(21);
+      font-size: vw(144);
+    }
+  }
+
+  &__plate {
+    position: relative;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 58px 55px 42px 71px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    font-weight: 500;
+
+    border: solid 1px $green-8b;
+    border-radius: 15px;
+    background-color: $bg;
+
+    @include max(xxl) {
+      max-width: vw(940);
+      //margin-bottom: vw(59);
+      padding: vw(58) vw(55) vw(42) vw(71);
+      font-size: vw(24);
+      line-height: vw(28);
+      border-radius: vw(15);
+    }
+
+    @include max(sm) {
+      max-width: vw(604, 800);
+      margin-bottom: vw(44, 800);
+      padding: vw(75, 800) vw(28, 800) vw(63, 800) vw(24, 800);
+      font-size: vw(24, 800);
+      line-height: vw(28, 800);
+      border-radius: vw(15, 800);
+    }
+  }
+}

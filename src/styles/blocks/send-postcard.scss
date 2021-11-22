@@ -32,6 +32,15 @@
     border-width: vw(5);
   }
 
+  @include max(sm) {
+    bottom: vw(20, 800);
+    right: vw(20, 800);
+    width: vw(180, 800);
+    height: vw(180, 800);
+    font-size: vw(20, 800);
+    border-width: vw(3, 800);
+  }
+
   @include hover {
     background-color: lighten($blue, 10%);
   }

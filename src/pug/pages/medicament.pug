@@ -1,0 +1,13 @@
+extends ../layouts/default
+
+block vars
+  -
+    const page = {
+      title: 'Лекарственный препарат на основе растительного сырья',
+      isHome: false,
+      current: 4
+    };
+
+block main 
+  include ../modules/medicament/inner-hero
+  include ../modules/medicament/info

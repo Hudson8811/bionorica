@@ -1,0 +1,13 @@
+extends ../layouts/default
+
+block vars
+  -
+    const page = {
+      title: 'Гомеопатия',
+      isHome: false,
+      current: 3
+    };
+
+block main 
+  include ../modules/homeopaty/inner-hero
+  include ../modules/homeopaty/info

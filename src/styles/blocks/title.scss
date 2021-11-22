@@ -9,4 +9,8 @@
   @include max(xxl) {
     font-size: vw(72);
   }
+
+  @include max(sm) {
+    font-size: vw(64, 800);
+  }
 }

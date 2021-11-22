@@ -1,8 +1,14 @@
 mixin info-section(item)
-  section.info-section(class= (item.mod || ''))
-    .info-section__container.container 
+  - let cl = item.text2 ? ' info-section--wrap' : '';
+
+  section.info-section(class= (item.mod || '') + cl)
+    .info-section__container.container
       .info-section__main 
         h2.info-section__title.title!= item.title
         .info-section__text!= item.text
       .info-section__image 
         img(src="images/" + item.img.path, width= item.img.w, height= item.img.h alt="")
+      
+      if item.text2 
+        .info-section__bottom
+          .info-section__bottom-text!= item.text2

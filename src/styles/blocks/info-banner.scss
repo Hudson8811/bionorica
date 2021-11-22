@@ -1,0 +1,61 @@
+.info-banner {
+  padding: 46px 0 82px;
+  background-color: $blue;
+
+  @include max(xxl) {
+    padding: vw(46) 0 vw(82);
+  }
+
+  @include max(sm) {
+    padding: vw(46, 800) 0 vw(82, 800);
+  }
+
+  &__container {
+  }
+
+  &__title {
+    max-width: 1070px;
+    margin: 0 auto 58px;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 900;
+    color: $white;
+    letter-spacing: 0.15em;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include max(xxl) {
+      max-width: vw(1070);
+      margin-bottom: vw(58);
+      font-size: vw(36);
+    }
+
+    @include max(sm) {
+      max-width: none;
+      margin-bottom: vw(24, 800);
+      font-size: vw(36, 800);
+    }
+  }
+
+  &__text {
+    max-width: 1209px;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 28px;
+    color: $white;
+    font-style: italic;
+    text-align: center;
+
+    @include max(xxl) {
+      max-width: vw(1209);
+      font-size: vw(24);
+      line-height: vw(28);
+    }
+
+    @include max(sm) {
+      max-width: none;
+      font-size: vw(24, 800);
+      line-height: vw(28, 800);
+    }
+  }
+}

@@ -8,19 +8,23 @@
 
 /*libs*/
 
+/* partials */
+@import "partials/main";
+
 /* blocks */
 @import "blocks/logo";
 @import "blocks/menu";
 @import "blocks/title";
+@import "blocks/modal";
 
 @import "blocks/hero";
 @import "blocks/bad";
 @import "blocks/info-section";
+@import "blocks/info-banner";
 @import "blocks/info";
 @import "blocks/send-postcard";
-
-/* partials */
-@import "partials/main";
+@import "blocks/inner-hero";
+@import "blocks/atlas";
 
 /* components */
 @import "partials/header";

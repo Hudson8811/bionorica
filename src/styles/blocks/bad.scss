@@ -18,6 +18,13 @@
     background-size: vw(750) auto, vw(571) auto;
   }
 
+  @include max(sm) {
+    padding-top: vw(71, 800);
+    padding-bottom: vw(64, 800);
+    border-bottom: none;
+    background-image: none;
+  }
+
   &__title {
     margin: 0 0 22px;
     font-size: 144px;
@@ -26,6 +33,11 @@
     @include max(xxl) {
       margin-bottom: vw(22);
       font-size: vw(144);
+    }
+
+    @include max(sm) {
+      margin-bottom: vw(6, 800);
+      font-size: vw(144, 800);
     }
   }
 
@@ -52,6 +64,15 @@
       border-radius: vw(15);
     }
 
+    @include max(sm) {
+      max-width: vw(604, 800);
+      margin-bottom: vw(44, 800);
+      padding: vw(75, 800) vw(28, 800) vw(63, 800) vw(24, 800);
+      font-size: vw(24, 800);
+      line-height: vw(28, 800);
+      border-radius: vw(15, 800);
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -70,6 +91,13 @@
         width: vw(787);
         height: vw(413);
       }
+
+      @include max(sm) {
+        top: vw(-288, 800);
+        width: vw(657, 800);
+        height: vw(413, 800);
+        background-image: url("../images/home/bad-plate-bg-mobile.svg");
+      }
     }
   }
 
@@ -84,6 +112,12 @@
       max-width: vw(708);
       font-size: vw(24);
       line-height: vw(28);
+    }
+
+    @include max(sm) {
+      max-width: vw(708, 800);
+      font-size: vw(24, 800);
+      line-height: vw(28, 800);
     }
   }
 }

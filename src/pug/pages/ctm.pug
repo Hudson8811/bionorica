@@ -1,0 +1,14 @@
+extends ../layouts/default
+
+block vars
+  -
+    const page = {
+      title: 'CTM',
+      isHome: false,
+      current: 2
+    };
+
+block main 
+  include ../modules/ctm/inner-hero
+  //-include ../modules/ctm/bad
+  include ../modules/ctm/info

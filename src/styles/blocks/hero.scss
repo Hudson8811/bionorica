@@ -167,6 +167,13 @@
           width: vw(650);
           height: vw(636);
         }
+
+        @include max(sm) {
+          top: vw(286, 800);
+          left: vw(-106, 800);
+          width: vw(395, 800);
+          height: vw(386, 800);
+        }
       }
 
       &--two {
@@ -182,6 +189,13 @@
           width: vw(726);
           height: vw(656);
         }
+
+        @include max(sm) {
+          top: vw(-127, 800);
+          left: vw(-157, 800);
+          width: vw(438, 800);
+          height: vw(386, 800);
+        }
       }
 
       &--three {
@@ -196,6 +210,13 @@
           left: vw(108);
           width: vw(574);
           height: vw(624);
+        }
+
+        @include max(sm) {
+          top: vw(-128, 800);
+          left: vw(92, 800);
+          width: vw(348, 800);
+          height: vw(379, 800);
         }
       }
 
@@ -213,6 +234,14 @@
           width: vw(518);
           height: vw(637);
         }
+
+        @include max(sm) {
+          z-index: -1;
+          top: vw(-112, 800);
+          left: vw(407, 800);
+          width: vw(255, 800);
+          height: vw(313, 800);
+        }
       }
 
       &--five {
@@ -227,6 +256,13 @@
           left: vw(517);
           width: vw(688);
           height: vw(701);
+        }
+
+        @include max(sm) {
+          top: vw(324, 800);
+          left: vw(356, 800);
+          width: vw(336, 800);
+          height: vw(342, 800);
         }
       }
     }

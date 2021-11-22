@@ -16,13 +16,15 @@ html(lang="ru")
 
 	body
 		block header
-			include ../partials/_header
+			if !page.isIntro
+				include ../partials/_header
 
 		main.main
 			block main
 
 		block footer
-			include ../partials/_footer
+			if !page.isIntro
+				include ../partials/_footer
 
 		block modals
 

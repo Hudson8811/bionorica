@@ -1,0 +1,90 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 101;
+  transform: translateY(-50%) translateX(-50%);
+  width: 940px;
+  padding: 18px 54px 50px;
+  box-shadow: 4px 4px 27px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  border: 1px solid #8bc53f;
+  background-color: $bg;
+
+  @include max(xxl) {
+    max-width: vw(940);
+    padding: vw(18) vw(54) vw(50);
+    box-shadow: vw(4) vw(4) vw(27) rgba(0, 0, 0, 0.15);
+    border-radius: vw(15);
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+
+    width: 56px;
+    height: 56px;
+    padding: 14px;
+
+    border: none;
+    background-color: transparent;
+    appearance: none;
+    cursor: pointer;
+
+    @include max(xxl) {
+      top: vw(20);
+      right: vw(15);
+      width: vw(56);
+      height: vw(56);
+      padding: vw(14);
+    }
+
+    @include hover {
+      svg {
+        fill: $green-8b;
+      }
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      fill: $blue;
+
+      transition: fill 0.3s ease;
+    }
+  }
+
+  &__title {
+    margin: 0 0 10px;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 900;
+    color: $green-8b;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include max(xxl) {
+      margin-bottom: vw(10);
+      font-size: vw(48);
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 28px;
+    color: $blue-02;
+    text-align: center;
+
+    @include max(xxl) {
+      font-size: vw(24);
+      line-height: vw(28);
+    }
+  }
+}
