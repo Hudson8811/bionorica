@@ -319,7 +319,7 @@
       }
     }
 
-    &--tiger-lily {
+    &--vitex {
       max-width: 330px;
       margin-top: 50px;
       margin-left: 139px;
@@ -337,16 +337,16 @@
       }
 
       #{$item}-image {
-        width: 306px;
+        width: 342px;
         transform: translateX(-17px) translateY(23px);
 
         @include max(xxl) {
-          width: vw(306);
+          width: vw(342);
           transform: translateX(#{vw(-17)}) translateY(#{vw(23)});
         }
 
         @include max(sm) {
-          width: vw(306, 800);
+          width: vw(300, 800);
           transform: none;
         }
       }

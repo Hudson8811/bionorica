@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet">
+    <title>Пожелать здоровья</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container"> <a class="header__logo logo" href="home.html"><img src="images/logo.svg" width="307" height="87" alt="bionorica logo"></a>
+        <div class="header__menu menu">
+          <nav class="menu__nav"><a class="menu__nav-item" href="home.html">Главная</a><a class="menu__nav-item" href="home.html#bad">БАД</a><a class="menu__nav-item" href="ctm.html">CTM</a><a class="menu__nav-item" href="homeopaty.html">Гомеопатия</a><a class="menu__nav-item" href="medicament.html">Лекарственный препарат на&nbsp;основе растительного сырья </a><a class="menu__nav-item" href="phytology.html">Атлас растений</a>
+          </nav>
+          <button class="menu__toggle" type="button" aria-label="Меню"><span class="menu__toggle-icon menu__toggle-icon--bar">
+              <svg width="64" height="50">
+                <use xlink:href="./images/sprite.svg#bar"></use>
+              </svg></span><span class="menu__toggle-icon menu__toggle-icon--close">
+              <svg width="44" height="44">
+                <use xlink:href="./images/sprite.svg#close"></use>
+              </svg></span></button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="postcard">
+        <div class="postcard__container container"> 
+          <h1 class="postcard__title title">Пожелать здоровья</h1>
+          <div class="postcard__intro">собери открытку и отправь близким</div>
+          <div class="postcard__main"> 
+            <div class="postcard__plants">
+              <button class="postcard__btn postcard__btn--chamomile" type="button" aria-label="Выбрать открытку Ромашка" title="Открытка «Ромашка»" data-card-id="2" data-card-text="Крепкого здоровья и легкого общения!" data-card-mod="chamomile"><img src="images/postcard/plants/1.svg" width="254" height="240" alt=""></button>
+              <button class="postcard__btn postcard__btn--dandelion" type="button" aria-label="Выбрать открытку Одуванчик" title="Открытка «Одуванчик»" data-card-id="4" data-card-text="Крепкого здоровья и прекрасного самочувствия!" data-card-mod="dandelion"><img src="images/postcard/plants/2.svg" width="82" height="235" alt=""></button>
+              <button class="postcard__btn postcard__btn--primrose" type="button" aria-label="Выбрать открытку Первоцвет" title="Открытка «Первоцвет»" data-card-id="1" data-card-text="Крепкого здоровья и свободного дыхания!" data-card-mod="primrose"><img src="images/postcard/plants/3.svg" width="124" height="241" alt=""></button>
+              <button class="postcard__btn postcard__btn--black-elderberry" type="button" aria-label="Выбрать открытку Черная бузина" title="Открытка «Черная бузина»" data-card-id="6" data-card-text="Крепкого здоровья и женской привлекательности!" data-card-mod="black-elderberry"><img src="images/postcard/plants/4.svg" width="258" height="247" alt=""></button>
+              <button class="postcard__btn postcard__btn--rosemary" type="button" aria-label="Выбрать открытку Розмарин" title="Открытка «Розмарин»" data-card-id="3" data-card-text="Крепкого здоровья и быстрого восстановления после болезни!" data-card-mod="rosemary"><img src="images/postcard/plants/5.svg" width="192" height="239" alt=""></button>
+              <button class="postcard__btn postcard__btn--verbena" type="button" aria-label="Выбрать открытку Вербена" title="Открытка «Вербена»" data-card-id="5" data-card-text="Крепкого здоровья и&amp;nbsp;устойчивого иммунитета!" data-card-mod="verbena"><img src="images/postcard/plants/6.svg" width="129" height="237" alt=""></button>
+            </div>
+            <div class="postcard__card">
+              <div class="postcard__card-image">
+                <picture> 
+                  <source media="(max-width: 800px)" srcset="images/postcard/cards/intro-mobile.svg"><img src="images/postcard/cards/intro.svg" alt="">
+                </picture>
+              </div>
+              <div class="postcard__card-text no-padding"><span>Крепкого здоровья и </span><span>свободного дыхания!</span></div>
+              <div class="postcard__card-overlay"></div>
+            </div>
+            <button class="postcard__send" type="button">Отправить другу</button>
+          </div>
+          <div class="postcard__modal">
+            <button class="postcard__modal-close" type="button">
+              <svg>
+                <use xlink:href="./images/sprite.svg#close"></use>
+              </svg>
+            </button>
+            <div class="postcard__modal-title">Пожелать здоровья</div>
+            <div class="postcard__modal-message"></div>
+            <form action="#" method="post">
+              <label class="postcard__field"><span class="postcard__field-text">Введите e-mail</span>
+                <input type="email" name="email">
+              </label>
+              <input class="visually-hidden" type="text" name="cardId" value="0">
+              <button class="postcard__modal-send" type="submit" disabled>Отправить другу</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__copyright">© 2021 HSM production</div>
+        <div class="footer__social social"><a class="social__item vk" href="#">
+            <svg>
+              <use xlink:href="images/sprite.svg#soc-vk"></use>
+            </svg></a><a class="social__item ok" href="#">
+            <svg>
+              <use xlink:href="images/sprite.svg#soc-ok"></use>
+            </svg></a><a class="social__item fb" href="#">
+            <svg>
+              <use xlink:href="images/sprite.svg#soc-fb"></use>
+            </svg></a><a class="social__item tw" href="#">
+            <svg>
+              <use xlink:href="images/sprite.svg#soc-tw"></use>
+            </svg></a></div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

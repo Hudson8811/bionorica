@@ -17,7 +17,8 @@
 
     #{$self}__nav {
       display: flex;
-      transform: translateX(0);
+      //transform: translateX(0);
+      transform: translateZ(1);
     }
   }
 
@@ -86,15 +87,14 @@
       position: fixed;
       top: 0;
       right: 0;
-      z-index: 100;
-      display: flex;
+      z-index: 101;
       flex-direction: column;
       width: 85vw;
       height: 100%;
       padding: vw(120, 800) vw(40, 800) vw(40, 800);
       background-color: $white;
 
-      transform: translateX(100%);
+      //transform: translateX(100%);
     }
 
     &-item {

@@ -1,0 +1,36 @@
+section.postcard
+  .postcard__container.container 
+    h1.postcard__title.title Пожелать здоровья
+    .postcard__intro собери открытку и отправь близким
+    .postcard__main 
+      .postcard__plants
+        each item in PLANTS
+          button.postcard__btn(class= (item.card.mod ? 'postcard__btn--' + item.card.mod : ''), type="button", aria-label="Выбрать открытку " + item.card.title, title="Открытка «" + item.card.title + "»", data-card-id= item.card.id, data-card-text= item.card.text, data-card-mod= item.card.mod)
+            img(src="images/postcard/plants/" + item.img.name + ".svg", width= item.img.w, height= item.img.h, alt="")
+
+      .postcard__card
+        .postcard__card-image
+          picture 
+            source(media="(max-width: 800px)", srcset="images/postcard/cards/intro-mobile.svg")
+            img(src="images/postcard/cards/intro.svg", alt="")
+
+        .postcard__card-text.no-padding
+          span Крепкого здоровья и 
+          span свободного дыхания!
+        .postcard__card-overlay
+      button.postcard__send(type="button") Отправить другу
+      //-div(style="display: flex; flex-wrap: wrap;")
+        each it in ['1', '2', '3', '4', '5', '6']
+          img(style="width: 200px; height: auto", src="images/postcard/cards/" + it + '.svg', alt="")
+    .postcard__modal
+      button.postcard__modal-close(type="button")
+        +icon('close')
+      .postcard__modal-title Пожелать здоровья
+      .postcard__modal-message
+      form(action="#", method="post")
+        label.postcard__field
+          span.postcard__field-text Введите e-mail
+          input(type="email", name="email")
+        
+        input.visually-hidden(type="text", name="cardId", value="0")
+        button.postcard__modal-send(type="submit", disabled) Отправить другу

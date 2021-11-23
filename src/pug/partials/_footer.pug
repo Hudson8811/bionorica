@@ -14,5 +14,6 @@ footer.footer
       a.social__item.tw(href="#")
         svg
           use(xlink:href="images/sprite.svg#soc-tw")
-    a.send-postcard(href= URLS.postcard)
-      span Пожелать здоровья
+    if page.current > 0 && page.current < 6
+      a.send-postcard(href= URLS.postcard)
+        span Пожелать здоровья

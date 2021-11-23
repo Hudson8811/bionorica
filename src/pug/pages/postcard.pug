@@ -1,0 +1,12 @@
+extends ../layouts/default
+
+block vars
+  -
+    const page = {
+      title: 'Пожелать здоровья',
+      isHome: false,
+      current: 6
+    };
+
+block main 
+  include ../modules/postcard/postcard

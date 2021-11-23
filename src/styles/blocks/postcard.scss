@@ -1,0 +1,695 @@
+.postcard {
+  padding-top: 173px;
+  padding-bottom: 60px;
+
+  @include max(xxl) {
+    padding: vw(173) 0 vw(60);
+  }
+
+  @include max(sm) {
+    padding: vw(60, 800) 0;
+  }
+
+  &__container {
+    max-width: 1920px;
+  }
+
+  &__title {
+    margin: 0 0 6px;
+    text-align: center;
+
+    @include max(xxl) {
+      margin-bottom: vw(6);
+    }
+
+    @include max(sm) {
+      min-width: vw(760, 800);
+      margin-left: vw(-20, 800);
+      margin-bottom: vw(-2, 800);
+      font-size: vw(54, 800);
+      white-space: nowrap;
+    }
+  }
+
+  &__intro {
+    font-size: 48px;
+    line-height: 1;
+    color: $blue;
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    @include max(xxl) {
+      font-size: vw(48);
+    }
+
+    @include max(sm) {
+      font-size: vw(36, 800);
+    }
+  }
+
+  &__main {
+    position: relative;
+    margin: 45px 0 0;
+    text-align: center;
+
+    @include max(xxl) {
+      margin-top: vw(45);
+    }
+
+    @include max(sm) {
+      margin-top: vw(36, 800);
+    }
+  }
+
+  &__plants {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    @include max(sm) {
+      position: static;
+      display: flex;
+      width: 706px;
+      height: auto;
+      margin-bottom: vw(47, 800);
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    padding: 0;
+    border: none;
+    transition: opacity 0.3s ease;
+    appearance: none;
+    cursor: pointer;
+    background-color: transparent;
+
+    @include max(sm) {
+      position: static;
+      align-self: flex-start;
+      flex-shrink: 0;
+    }
+
+    &--chamomile {
+      top: 10%; //12%;
+      left: 3.2%;
+
+      width: 240px;
+
+      @include max(xxl) {
+        width: vw(240);
+      }
+
+      @include max(sm) {
+        width: vw(128, 800);
+      }
+    }
+
+    &--dandelion {
+      top: 51.6%;
+      left: 1.6%;
+
+      width: 82px;
+
+      @include max(xxl) {
+        width: vw(82);
+      }
+
+      @include max(sm) {
+        width: vw(45, 800);
+        margin-left: vw(42, 800);
+        margin-top: vw(4, 800);
+      }
+    }
+
+    &--primrose {
+      top: 51%;
+      left: 10%;
+
+      width: 124px;
+
+      @include max(xxl) {
+        width: vw(124);
+      }
+
+      @include max(sm) {
+        width: vw(69, 800);
+        margin-left: vw(44, 800);
+        margin-top: vw(3, 800);
+      }
+    }
+
+    &--black-elderberry {
+      top: 0.4%;
+      left: 84.2%;
+
+      width: 258px;
+
+      @include max(xxl) {
+        width: vw(258);
+      }
+
+      @include max(sm) {
+        width: vw(144, 800);
+        margin-left: vw(9, 800);
+        margin-top: vw(10, 800);
+        order: 1;
+      }
+    }
+
+    &--rosemary {
+      top: 51.3%;
+      left: 82.9%;
+
+      width: 192px;
+
+      @include max(xxl) {
+        width: vw(192);
+      }
+
+      @include max(sm) {
+        width: vw(109, 800);
+        margin-left: vw(38, 800);
+        margin-top: vw(2, 800);
+      }
+    }
+
+    &--verbena {
+      top: 51%;
+      left: 93.2%;
+
+      width: 129px;
+
+      @include max(xxl) {
+        width: vw(129);
+      }
+
+      @include max(sm) {
+        width: vw(73, 800);
+        margin-left: vw(2, 800);
+      }
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    @include hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__card {
+    $card: &;
+    position: relative;
+    width: 1206px;
+    margin: 0 auto;
+
+    @include max(xxl) {
+      width: vw(1206);
+    }
+
+    @include max(sm) {
+      width: vw(655, 800);
+    }
+
+    &--chamomile {
+      #{$card}-text {
+        top: 38%;
+
+        max-width: 940px;
+
+        @include max(xxl) {
+          max-width: vw(940);
+        }
+        @include max(sm) {
+          max-width: 100%; //vw(940);
+          font-size: vw(64, 800);
+        }
+      }
+    }
+
+    &--dandelion {
+      #{$card}-text {
+        top: 28.4%;
+
+        max-width: 940px;
+        font-size: 56px;
+
+        @include max(xxl) {
+          max-width: vw(940);
+          font-size: vw(56);
+        }
+        @include max(sm) {
+          max-width: 100%; //vw(940);
+          font-size: vw(50, 800);
+        }
+      }
+    }
+
+    &--primrose {
+      #{$card}-text {
+        top: 38%;
+
+        @include max(sm) {
+          top: 50%;
+          max-width: 100%; //vw(940);
+          font-size: vw(64, 800);
+        }
+      }
+    }
+
+    &--black-elderberry {
+      #{$card}-text {
+        top: 29%;
+        max-width: 940px;
+        font-size: 56px;
+
+        @include max(xxl) {
+          max-width: vw(940);
+          font-size: vw(56);
+        }
+        @include max(sm) {
+          top: 50%;
+          max-width: none; //vw(940);
+          font-size: vw(42, 800);
+        }
+      }
+    }
+
+    &--rosemary {
+      #{$card}-text {
+        top: 29%;
+        max-width: none;
+        width: 1200px;
+        font-size: 56px;
+
+        @include max(xxl) {
+          width: vw(1200);
+          font-size: vw(56);
+        }
+        @include max(sm) {
+          top: 27%;
+          width: 100%; //vw(1200);
+          font-size: vw(50, 800);
+        }
+      }
+    }
+
+    &--verbena {
+      #{$card}-text {
+        top: 29%;
+        max-width: 900px;
+        font-size: 56px;
+
+        @include max(xxl) {
+          max-width: vw(900);
+          font-size: vw(56);
+        }
+        @include max(sm) {
+          top: 55.5%;
+          max-width: 100%; //vw(900);
+          font-size: vw(50, 800);
+        }
+      }
+    }
+
+    &-image {
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &-text {
+      position: absolute;
+      left: 50%;
+      top: 24%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 1024px;
+      font-size: 64px;
+      line-height: 1;
+      color: $blue;
+      font-weight: 900;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+
+      //padding: 0 10px;
+
+      @include max(xxl) {
+        max-width: vw(1024);
+        padding: 0 vw(10);
+        font-size: vw(64);
+      }
+
+      @include max(sm) {
+        top: 29%;
+        max-width: vw(535, 800);
+        padding: 0 vw(10, 800);
+        font-size: vw(64, 800);
+      }
+
+      &.no-padding {
+        padding: 0 !important;
+      }
+
+      span {
+        display: block;
+        padding: 5px 10px;
+        background-color: $lime;
+        align-self: center;
+      }
+
+      span + span {
+        margin-top: 2px;
+
+        @include max(xxl) {
+          margin-top: vw(2);
+        }
+
+        @include max(sm) {
+          margin-top: vw(2, 800);
+        }
+      }
+    }
+
+    &-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background-color: $green-c1;
+      transition: opacity 0.3s ease;
+
+      opacity: 0;
+    }
+
+    &.preloaded {
+      #{$card}-overlay {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__send {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 29px;
+    padding: 0;
+
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 700;
+    color: $blue;
+    text-transform: uppercase;
+
+    border: none;
+    background-color: transparent;
+    transition: color 0.3s ease;
+
+    appearance: none;
+    cursor: pointer;
+
+    @include max(xxl) {
+      margin-top: vw(29);
+      font-size: vw(36);
+    }
+
+    @include max(sm) {
+      margin-top: vw(34, 800);
+      font-size: vw(36, 800);
+    }
+
+    @include hover {
+      color: lighten($blue, 10%);
+
+      &::after {
+        transform: translateX(-50%) scale(0, 1);
+      }
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 1px;
+      background-color: $blue;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &__modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 103;
+    transform: translateX(-50%) translateY(-50%);
+    width: 940px;
+    padding: 70px 62px 60px;
+    border: 1px solid #8bc53f;
+    border-radius: 15px;
+    background-color: $bg;
+
+    @include max(xxl) {
+      width: vw(940);
+      padding: vw(70) vw(62) vw(60);
+      border-radius: vw(15);
+    }
+
+    @include max(sm) {
+      width: 85%;
+      padding: vw(70, 800) vw(62, 800) vw(60, 800);
+      border-radius: vw(15, 800);
+    }
+
+    &.shown {
+      display: block;
+    }
+
+    &-close {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      width: 32px;
+      height: 32px;
+      padding: 8px;
+      border: none;
+      background-color: transparent;
+      appearance: none;
+      cursor: pointer;
+
+      @include max(xxl) {
+        top: vw(18);
+        right: vw(18);
+        width: vw(32);
+        height: vw(32);
+        padding: vw(8);
+      }
+
+      @include max(sm) {
+        top: vw(18, 800);
+        right: vw(18, 800);
+        width: vw(32, 800);
+        height: vw(32, 800);
+        padding: vw(8, 800);
+      }
+
+      svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        fill: $blue;
+        transition: fill 0.3s ease;
+      }
+
+      @include hover {
+        svg {
+          fill: $green-8b;
+        }
+      }
+
+      &:active {
+        opacity: 0.7;
+      }
+    }
+
+    &-title {
+      margin-bottom: 15px;
+      font-size: 48px;
+      letter-spacing: 0.15em;
+      color: $blue;
+      font-weight: 900;
+      text-align: center;
+      text-transform: uppercase;
+
+      @include max(xxl) {
+        margin-bottom: vw(15);
+        font-size: vw(48);
+      }
+
+      @include max(sm) {
+        margin-bottom: vw(24, 800);
+        font-size: vw(40, 800);
+      }
+    }
+
+    &-send {
+      display: block;
+      width: 100%;
+      max-width: 255px;
+      margin: 36px auto 0;
+      padding: 13px 8px;
+      font-size: 24px;
+      line-height: 1;
+      text-align: center;
+      color: $white;
+      text-transform: uppercase;
+      font-weight: 700;
+      border-radius: 5px;
+      border: none;
+      background-color: $blue;
+      transition: background-color 0.3s ease;
+
+      @include max(xxl) {
+        max-width: vw(255);
+        margin-top: vw(36);
+        padding: vw(13) vw(8);
+        font-size: vw(24);
+        border-radius: vw(5);
+      }
+
+      @include max(sm) {
+        max-width: vw(255, 800);
+        margin-top: vw(36, 800);
+        padding: vw(13, 800) vw(8, 800);
+        font-size: vw(24, 800);
+        border-radius: vw(5, 800);
+      }
+
+      appearance: none;
+      cursor: pointer;
+
+      @include hover {
+        background-color: $green-8b;
+      }
+
+      &:active {
+        opacity: 0.7;
+      }
+
+      &:disabled {
+        pointer-events: none;
+        opacity: 0.5;
+      }
+    }
+
+    &-message {
+      display: none;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+
+      @include max(xxl) {
+        font-size: vw(24);
+        line-height: vw(28);
+      }
+
+      @include max(sm) {
+        font-size: vw(24, 800);
+        line-height: vw(28, 800);
+      }
+
+      &.shown {
+        display: block;
+      }
+    }
+
+    &-message.shown + form {
+      display: none;
+    }
+  }
+
+  &__field {
+    display: flex;
+    justify-content: center;
+
+    @include max(sm) {
+      display: block;
+    }
+
+    &-text {
+      display: block;
+      margin-right: 30px;
+      font-size: 24px;
+      line-height: 1;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $blue;
+      align-self: center;
+
+      @include max(xxl) {
+        margin-right: vw(30);
+        font-size: vw(24);
+      }
+      @include max(sm) {
+        margin-right: 0;
+        margin-bottom: vw(12, 800);
+        font-size: vw(24, 800);
+      }
+    }
+
+    input {
+      width: 435px;
+      padding: 14px 24px 15px;
+      background-color: $white;
+      border: solid 1px $blue;
+      font-size: 24px;
+      line-height: 1;
+
+      align-self: center;
+      transition: border-color 0.3s ease;
+
+      appearance: none;
+
+      @include max(xxl) {
+        width: vw(435);
+        padding: vw(14) vw(24) vw(15);
+        font-size: vw(24);
+      }
+
+      @include max(sm) {
+        width: 100%; //vw(435, 800);
+        padding: vw(14, 800) vw(24, 800) vw(15, 800);
+        font-size: vw(24, 800);
+      }
+
+      @include hover {
+        outline: none;
+        border-color: $green-8b;
+      }
+    }
+  }
+}
