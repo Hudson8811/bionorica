@@ -14,7 +14,8 @@
   }
 
   @include max(sm) {
-    position: static;
+    position: relative;
+    z-index: 2;
     padding-top: vw(47, 800);
     padding-bottom: vw(41, 800);
   }
