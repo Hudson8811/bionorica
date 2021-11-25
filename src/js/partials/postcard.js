@@ -200,7 +200,7 @@ window.addEventListener('load', () => {
       console.log(el.offsetWidth)
 			let tmp = document.createElement('p');
 			tmp = el.cloneNode(true);
-			tmp.style.width = el.offsetWidth + 'px';
+			tmp.style.width = el.offsetWidth - 55 + 'px';
 			tmp.style.position = 'absolute';
 			tmp.style.left = '-2000px';
 			tmp.innerHTML = 'foo';
@@ -224,7 +224,8 @@ window.addEventListener('load', () => {
 			}
 			tmp.remove();
 			el.innerHTML = lines.map(function(line) {
-		
+
+			  console.log(line);
 				return el.hasAttribute('data-wrapper-class') ? '<span class="' + el.dataset.wrapperClass + '">' + line + '</span>' : '<span>' + line + '</span>';
 
 			}).join('');

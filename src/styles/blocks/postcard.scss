@@ -223,7 +223,6 @@
 
     &--chamomile {
       #{$card}-text {
-        top: 38%;
 
         max-width: 940px;
 
@@ -239,7 +238,6 @@
 
     &--dandelion {
       #{$card}-text {
-        top: 28.4%;
 
         max-width: 940px;
         font-size: 56px;
@@ -257,7 +255,6 @@
 
     &--primrose {
       #{$card}-text {
-        top: 38%;
 
         @include max(sm) {
           top: 50%;
@@ -269,7 +266,6 @@
 
     &--black-elderberry {
       #{$card}-text {
-        top: 29%;
         max-width: 940px;
         font-size: 56px;
 
@@ -287,7 +283,6 @@
 
     &--rosemary {
       #{$card}-text {
-        top: 29%;
         max-width: none;
         width: 1200px;
         font-size: 56px;
@@ -297,7 +292,6 @@
           font-size: vw(56);
         }
         @include max(sm) {
-          top: 27%;
           width: 100%; //vw(1200);
           font-size: vw(50, 800);
         }
@@ -306,7 +300,6 @@
 
     &--verbena {
       #{$card}-text {
-        top: 29%;
         max-width: 900px;
         font-size: 56px;
 
@@ -315,7 +308,6 @@
           font-size: vw(56);
         }
         @include max(sm) {
-          top: 55.5%;
           max-width: 100%; //vw(900);
           font-size: vw(50, 800);
         }
@@ -333,8 +325,8 @@
     &-text {
       position: absolute;
       left: 50%;
-      top: 24%;
-      transform: translateX(-50%);
+      top: 50%;
+      transform: translate(-50%, -50%);
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -355,7 +347,6 @@
       }
 
       @include max(sm) {
-        top: 29%;
         max-width: vw(535, 800);
         padding: 0 vw(10, 800);
         font-size: vw(64, 800);
@@ -367,7 +358,7 @@
 
       span {
         display: block;
-        padding: 5px 10px;
+        padding: 5px 7px;
         background-color: $lime;
         align-self: center;
       }
