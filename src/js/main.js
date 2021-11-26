@@ -5,4 +5,4 @@
 //= ./partials/menu.js
 //= ./partials/atlas.js
 //= ./partials/postcard.js
-//= ./partials/plant-animation.js
+// ./partials/plant-animation.js

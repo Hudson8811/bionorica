@@ -10,17 +10,11 @@ section.hero
 
         p Спешим поделиться!
 
-      .hero__plate-plant.hero__plate-plant--one
-        //-(data-aos="fade-left", data-aos-duration="1000", data-aos-delay="400")
-      .hero__plate-plant.hero__plate-plant--two
-        //-(data-aos="fade-up-left", data-aos-duration="1000", data-aos-delay="400")
-      .hero__plate-plant.hero__plate-plant--three
-        //-(data-aos="fade-up", data-aos-duration="1000", data-aos-delay="400")
-        include plants/3
-      .hero__plate-plant.hero__plate-plant--four
-        //-(data-aos="fade-up-right", data-aos-duration="1000", data-aos-delay="400")
-      .hero__plate-plant.hero__plate-plant--five
-        //-(data-aos="fade-right", data-aos-duration="1000", data-aos-delay="400")
+      .hero__plate-plant.hero__plate-plant--one(data-aos="fade-left", data-aos-duration="1000", data-aos-delay="400")
+      .hero__plate-plant.hero__plate-plant--two(data-aos="fade-up-left", data-aos-duration="1000", data-aos-delay="400")
+      .hero__plate-plant.hero__plate-plant--three(data-aos="fade-up", data-aos-duration="1000", data-aos-delay="400")
+      .hero__plate-plant.hero__plate-plant--four(data-aos="fade-up-right", data-aos-duration="1000", data-aos-delay="400")
+      .hero__plate-plant.hero__plate-plant--five(data-aos="fade-right", data-aos-duration="1000", data-aos-delay="400")
 
     .hero__menu(data-aos="fade-up")
       each item, index in MENU

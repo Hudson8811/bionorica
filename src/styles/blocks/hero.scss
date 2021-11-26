@@ -154,7 +154,7 @@
       background-repeat: no-repeat;
       background-size: 100% auto;
 
-      svg {
+      /*svg {
         display: block;
         width: 100%;
         height: auto;
@@ -163,7 +163,7 @@
         path.path-bg {
           opacity: 0;
         }
-      }
+      }*/
 
       &--one {
         top: -132px;
@@ -214,7 +214,7 @@
         left: 108px;
         width: 574px;
         height: 624px;
-        //background-image: url("../images/home/plant-3.svg");
+        background-image: url("../images/home/plant-3.svg");
 
         @include max(xxl) {
           top: vw(-470);
